@@ -208,9 +208,9 @@ typedef enum _PROCESSINFOCLASS2 {
     /* added after XP+ */
     _ProcessImageFileName,
     ProcessLUIDDeviceMapsEnabled,
-// MSVC 2015 starts forcing C++11 standard, which does not allow duplicate
+// MSVC 2013 starts forcing C++11 standard, which does not allow duplicate
 // unscoped enumerations.  It doesn't matter that this is C code, MSVC is a C++ compiler.
-#if _MSC_VER < 1900
+#if _MSC_VER < 1800
     ProcessBreakOnTermination,
 #endif
     ProcessDebugObjectHandle=ProcessLUIDDeviceMapsEnabled+2,
